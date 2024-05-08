@@ -1,0 +1,468 @@
+{
+    "fields": [
+        {
+            "name": "id",
+            "type_name": "bigint",
+            "type": "bigint",
+            "collation": null,
+            "nullable": false,
+            "default": null,
+            "auto_increment": true,
+            "comment": null,
+            "fillable": false,
+            "length": "20"
+        },
+        {
+            "name": "title",
+            "type_name": "varchar",
+            "type": "varchar",
+            "collation": "utf8mb4_unicode_ci",
+            "nullable": false,
+            "default": null,
+            "auto_increment": false,
+            "comment": null,
+            "fillable": false,
+            "length": "255"
+        },
+        {
+            "name": "description",
+            "type_name": "varchar",
+            "type": "varchar",
+            "collation": "utf8mb4_unicode_ci",
+            "nullable": true,
+            "default": "",
+            "auto_increment": false,
+            "comment": null,
+            "fillable": true,
+            "length": "400"
+        },
+        {
+            "name": "content",
+            "type_name": "longtext",
+            "type": "longtext",
+            "collation": "utf8mb4_unicode_ci",
+            "nullable": true,
+            "default": null,
+            "auto_increment": false,
+            "comment": null,
+            "fillable": true,
+            "length": null
+        },
+        {
+            "name": "image",
+            "type_name": "varchar",
+            "type": "varchar",
+            "collation": "utf8mb4_unicode_ci",
+            "nullable": true,
+            "default": null,
+            "auto_increment": false,
+            "comment": null,
+            "fillable": true,
+            "length": "255"
+        },
+        {
+            "name": "author_id",
+            "type_name": "int",
+            "type": "int",
+            "collation": null,
+            "nullable": false,
+            "default": null,
+            "auto_increment": false,
+            "comment": null,
+            "fillable": true,
+            "length": "11"
+        },
+        {
+            "name": "status",
+            "type_name": "varchar",
+            "type": "varchar",
+            "collation": "utf8mb4_unicode_ci",
+            "nullable": false,
+            "default": "published",
+            "auto_increment": false,
+            "comment": null,
+            "fillable": true,
+            "length": "60"
+        },
+        {
+            "name": "view_layout",
+            "type_name": "varchar",
+            "type": "varchar",
+            "collation": "utf8mb4_unicode_ci",
+            "nullable": true,
+            "default": null,
+            "auto_increment": false,
+            "comment": null,
+            "fillable": true,
+            "length": "255"
+        },
+        {
+            "name": "published_at",
+            "type_name": "datetime",
+            "type": "datetime",
+            "collation": null,
+            "nullable": true,
+            "default": null,
+            "auto_increment": false,
+            "comment": null,
+            "fillable": true,
+            "length": null
+        },
+        {
+            "name": "lock_password",
+            "type_name": "varchar",
+            "type": "varchar",
+            "collation": "utf8mb4_unicode_ci",
+            "nullable": true,
+            "default": null,
+            "auto_increment": false,
+            "comment": null,
+            "fillable": true,
+            "length": "255"
+        },
+        {
+            "name": "layout",
+            "type_name": "varchar",
+            "type": "varchar",
+            "collation": "utf8mb4_unicode_ci",
+            "nullable": true,
+            "default": null,
+            "auto_increment": false,
+            "comment": null,
+            "fillable": true,
+            "length": "255"
+        },
+        {
+            "name": "app_before",
+            "type_name": "varchar",
+            "type": "varchar",
+            "collation": "utf8mb4_unicode_ci",
+            "nullable": true,
+            "default": null,
+            "auto_increment": false,
+            "comment": null,
+            "fillable": true,
+            "length": "500"
+        },
+        {
+            "name": "app_after",
+            "type_name": "varchar",
+            "type": "varchar",
+            "collation": "utf8mb4_unicode_ci",
+            "nullable": true,
+            "default": null,
+            "auto_increment": false,
+            "comment": null,
+            "fillable": true,
+            "length": "500"
+        },
+        {
+            "name": "data",
+            "type_name": "longtext",
+            "type": "longtext",
+            "collation": "utf8mb4_unicode_ci",
+            "nullable": true,
+            "default": null,
+            "auto_increment": false,
+            "comment": null,
+            "fillable": true,
+            "length": null
+        },
+        {
+            "name": "js",
+            "type_name": "text",
+            "type": "text",
+            "collation": "utf8mb4_unicode_ci",
+            "nullable": true,
+            "default": null,
+            "auto_increment": false,
+            "comment": null,
+            "fillable": true,
+            "length": null
+        },
+        {
+            "name": "css",
+            "type_name": "text",
+            "type": "text",
+            "collation": "utf8mb4_unicode_ci",
+            "nullable": true,
+            "default": null,
+            "auto_increment": false,
+            "comment": null,
+            "fillable": true,
+            "length": null
+        },
+        {
+            "name": "custom_js",
+            "type_name": "text",
+            "type": "text",
+            "collation": "utf8mb4_unicode_ci",
+            "nullable": true,
+            "default": null,
+            "auto_increment": false,
+            "comment": null,
+            "fillable": true,
+            "length": null
+        },
+        {
+            "name": "custom_css",
+            "type_name": "text",
+            "type": "text",
+            "collation": "utf8mb4_unicode_ci",
+            "nullable": true,
+            "default": null,
+            "auto_increment": false,
+            "comment": null,
+            "fillable": true,
+            "length": null
+        },
+        {
+            "name": "created_at",
+            "type_name": "timestamp",
+            "type": "timestamp",
+            "collation": null,
+            "nullable": true,
+            "default": null,
+            "auto_increment": false,
+            "comment": null,
+            "fillable": true,
+            "length": null
+        },
+        {
+            "name": "updated_at",
+            "type_name": "timestamp",
+            "type": "timestamp",
+            "collation": null,
+            "nullable": true,
+            "default": null,
+            "auto_increment": false,
+            "comment": null,
+            "fillable": true,
+            "length": null
+        }
+    ],
+    "form": [
+        {
+            "id": "row-1715189800515-0",
+            "name": "id",
+            "title": "id",
+            "uiType": "number",
+            "options": []
+        },
+        {
+            "id": "row-1715189800515-1",
+            "name": "title",
+            "title": "title",
+            "uiType": "text",
+            "options": []
+        },
+        {
+            "id": "row-1715189800515-2",
+            "name": "description",
+            "title": "description",
+            "uiType": "text",
+            "options": []
+        },
+        {
+            "id": "row-1715189800515-3",
+            "name": "content",
+            "title": "content",
+            "uiType": "tinymce",
+            "options": []
+        },
+        {
+            "id": "row-1715189800515-4",
+            "name": "image",
+            "title": "image",
+            "uiType": "text",
+            "options": []
+        },
+        {
+            "id": "row-1715189800515-5",
+            "name": "author_id",
+            "title": "author_id",
+            "uiType": "number",
+            "options": []
+        },
+        {
+            "id": "row-1715189800515-6",
+            "name": "status",
+            "title": "status",
+            "uiType": "text",
+            "options": []
+        },
+        {
+            "id": "row-1715189800515-7",
+            "name": "view_layout",
+            "title": "view_layout",
+            "uiType": "text",
+            "options": []
+        },
+        {
+            "id": "row-1715189800515-8",
+            "name": "published_at",
+            "title": "published_at",
+            "uiType": "datePicker",
+            "options": []
+        },
+        {
+            "id": "row-1715189800515-9",
+            "name": "lock_password",
+            "title": "lock_password",
+            "uiType": "text",
+            "options": []
+        },
+        {
+            "id": "row-1715189800515-10",
+            "name": "layout",
+            "title": "layout",
+            "uiType": "text",
+            "options": []
+        },
+        {
+            "id": "row-1715189800515-11",
+            "name": "app_before",
+            "title": "app_before",
+            "uiType": "text",
+            "options": []
+        },
+        {
+            "id": "row-1715189800515-12",
+            "name": "app_after",
+            "title": "app_after",
+            "uiType": "text",
+            "options": []
+        },
+        {
+            "id": "row-1715189800515-13",
+            "name": "data",
+            "title": "data",
+            "options": []
+        },
+        {
+            "id": "row-1715189800515-14",
+            "name": "js",
+            "title": "js",
+            "uiType": "textarea",
+            "options": []
+        },
+        {
+            "id": "row-1715189800515-15",
+            "name": "css",
+            "title": "css",
+            "uiType": "textarea",
+            "options": []
+        },
+        {
+            "id": "row-1715189800515-16",
+            "name": "custom_js",
+            "title": "custom_js",
+            "uiType": "textarea",
+            "options": []
+        },
+        {
+            "id": "row-1715189800515-17",
+            "name": "custom_css",
+            "title": "custom_css",
+            "uiType": "textarea",
+            "options": []
+        },
+        {
+            "id": "row-1715189800515-18",
+            "name": "created_at",
+            "title": "created_at",
+            "uiType": "datePicker",
+            "options": []
+        },
+        {
+            "id": "row-1715189800515-19",
+            "name": "updated_at",
+            "title": "updated_at",
+            "uiType": "datePicker",
+            "options": []
+        }
+    ],
+    "table": [
+        {
+            "id": "row-1715189820719-0",
+            "name": "id",
+            "title": "id",
+            "uiType": "number",
+            "options": []
+        },
+        {
+            "id": "row-1715189820719-1",
+            "name": "title",
+            "title": "title",
+            "uiType": "text",
+            "options": []
+        },
+        {
+            "id": "row-1715189820719-2",
+            "name": "description",
+            "title": "description",
+            "uiType": "text",
+            "options": []
+        },
+        {
+            "id": "row-1715189820719-5",
+            "name": "author_id",
+            "title": "author_id",
+            "uiType": "number",
+            "options": []
+        },
+        {
+            "id": "row-1715189820719-6",
+            "name": "status",
+            "title": "status",
+            "uiType": "text",
+            "options": []
+        },
+        {
+            "id": "row-1715189820719-7",
+            "name": "view_layout",
+            "title": "view_layout",
+            "uiType": "text",
+            "options": []
+        },
+        {
+            "id": "row-1715189820719-8",
+            "name": "published_at",
+            "title": "published_at",
+            "uiType": "datePicker",
+            "options": []
+        },
+        {
+            "id": "row-1715189820719-9",
+            "name": "lock_password",
+            "title": "lock_password",
+            "uiType": "text",
+            "options": []
+        },
+        {
+            "id": "row-1715189820719-10",
+            "name": "layout",
+            "title": "layout",
+            "uiType": "text",
+            "options": []
+        },
+        {
+            "id": "row-1715189820719-18",
+            "name": "created_at",
+            "title": "created_at",
+            "uiType": "datePicker",
+            "options": []
+        },
+        {
+            "id": "row-1715189820719-19",
+            "name": "updated_at",
+            "title": "updated_at",
+            "uiType": "datePicker",
+            "options": []
+        }
+    ],
+    "model": "Sokeio\\Page\\Models\\Page",
+    "table_name": "pages",
+    "model_name": "Page",
+    "name": "page"
+}
